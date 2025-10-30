@@ -1,1 +1,9 @@
-/* Your CSS code here. */
+/* Center the subheading and add a professional look */
+h2 {
+  text-align: center;
+  color: #007bff;       /* Bootstrap blue shade */
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  margin-top: 50px;
+  letter-spacing: 1px;
+}
