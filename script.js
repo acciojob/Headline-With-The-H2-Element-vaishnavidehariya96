@@ -1,16 +1,20 @@
-// Wait for the DOM to fully load
-document.addEventListener("DOMContentLoaded", function () {
-  const heading = document.querySelector("h2");
+// acciojob-subheading.js
 
-  // Show a message in the console when the page loads
-  console.log("Subheading loaded successfully!");
+// Wait until the document is fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+  const subheading = document.querySelector("h2");
 
-  // Add a hover effect with JS (changes color on hover)
-  heading.addEventListener("mouseenter", function () {
-    heading.style.color = "#28a745"; // green
+  // When user clicks on the subheading
+  subheading.addEventListener("click", function() {
+    alert("Welcome to Acciojob! 🚀");
   });
 
-  heading.addEventListener("mouseleave", function () {
-    heading.style.color = "#007bff"; // back to blue
+  // Optional: change color on hover
+  subheading.addEventListener("mouseover", function() {
+    subheading.style.color = "#ff4d4d";
+  });
+
+  subheading.addEventListener("mouseout", function() {
+    subheading.style.color = "#007bff";
   });
 });
